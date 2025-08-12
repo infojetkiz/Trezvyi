@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jetkiz — Трезвый водитель</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#ffc107;--dark:#0b0b0b;--card:#111;--muted:#bdbdbd;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#000;color:#fff;}
+.header{height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:30px 20px;
+background-image: url('bg.jpg');background-size:cover;background-position:center;}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.75));}
+.header-inner{position:relative;z-index:2;max-width:980px;padding:20px}
+h1{font-size:clamp(26px,6vw,48px);margin:0 0 10px;font-weight:800}
+.lead{font-size:clamp(14px,2.2vw,18px);margin:0 0 18px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--yellow);color:#000;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none}
+.container{max-width:1100px;margin:30px auto;padding:0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+.price{font-weight:800;color:var(--yellow);font-size:1.5rem}
+footer{background:#060606;padding:18px 20px;text-align:center;color:var(--muted);margin-top:30px;border-top:1px solid rgba(255,255,255,0.03)}
+.contact a{color:var(--yellow);text-decoration:none;font-weight:600}
+.confidential{margin-top:8px;color:var(--muted);font-size:0.95rem}
+@media(max-width:600px){.header{height:60vh}}
+</style>
+</head>
+<body>
+<section class="header">
+  <div class="overlay"></div>
+  <div class="header-inner">
+    <h1>🚗 Jetkiz — Трезвый водитель</h1>
+    <p class="lead">Ваша безопасность — наш приоритет.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+      <a class="btn" href="tel:+77770100461">📞 Позвонить: +7 777 010 0461</a>
+      <a class="btn" href="https://wa.me/77770100461" target="_blank" rel="noopener">
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <h2 style="text-align:center;margin:6px 0 0">Почему выбирают нас</h2>
+  <p style="text-align:center;color:var(--muted);margin-top:6px">Надежно. Быстро. Профессионально.</p>
+  <div class="cards">
+    <div class="card"><h3>24/7 — круглосуточно</h3><p style="color:var(--muted)">Вызывайте в любое время — мы на связи.</p></div>
+    <div class="card"><h3>Опытные водители</h3><p style="color:var(--muted)">Проверенные профессионалы, вежливость и ответственность.</p></div>
+    <div class="card"><h3>Доступные цены</h3><p style="color:var(--muted)">От <span class="price">5000 ₸</span> по городу.</p></div>
+  </div>
+
+  <section style="margin-top:28px">
+    <h2 style="text-align:center">Тарифы</h2>
+    <div style="max-width:720px;margin:12px auto;color:var(--muted);text-align:center">
+      <p><strong>По городу:</strong> от 5000 ₸</p>
+      <p><strong>За город:</strong> по договоренности</p>
+    </div>
+  </section>
+
+  <section style="margin-top:28px;text-align:center">
+    <h2>Как это работает</h2>
+    <ol style="max-width:720px;margin:8px auto 0;color:var(--muted);text-align:left;padding-left:18px">
+      <li>Вы звоните или пишете в WhatsApp.</li>
+      <li>Мы выезжаем к вам и аккуратно доставляем ваш автомобиль и вас.</li>
+      <li>Оплата — наличными или переводом по прибытию.</li>
+    </ol>
+  </section>
+</div>
+
+<footer>
+  <div class="contact">
+    📞 <a href="tel:+77770100461">+7 777 010 0461</a> |
+    <a href="https://wa.me/77770100461" target="_blank">WhatsApp</a>
+  </div>
+  <div class="confidential">🔒 У нас всё конфиденциально</div>
+</footer>
+</body>
+</html>
